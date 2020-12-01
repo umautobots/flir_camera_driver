@@ -5,12 +5,14 @@ unset(Spinnaker_LIBRARIES)
 find_path(Spinnaker_INCLUDE_DIRS NAMES
   Spinnaker.h
   PATHS
+  /opt/spinnaker/include
   /usr/include/spinnaker/
   /usr/local/include/spinnaker/
 )
 
 find_library(Spinnaker_LIBRARIES NAMES Spinnaker
   PATHS
+  /opt/spinnaker/lib
   /usr/lib
   /usr/local/lib
 )
